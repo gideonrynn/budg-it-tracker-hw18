@@ -24,7 +24,7 @@ const filesCacheList = [
     );
   });
   
-  // Clean up old caches
+  // Clean up old cache(s)
   self.addEventListener("activate", event => {
     const currentCaches = [CACHEV1, DATACACHEV1];
     event.waitUntil(
