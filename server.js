@@ -13,6 +13,7 @@ app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+//access all files within the public folder
 app.use(express.static("public"));
 
 mongoose.connect("mongodb://localhost/budget", {
