@@ -20,9 +20,7 @@ app.use(express.static("public"));
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect(MONGODB_URI, {
-  useMongoClient: true
-});
+mongoose.connect(MONGODB_URI);
 
 // routes
 app.use(require("./routes/api.js"));
