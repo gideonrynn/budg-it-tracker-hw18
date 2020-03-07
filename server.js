@@ -7,7 +7,7 @@ const PORT = 3000;
 
 const app = express();
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://budgitdbscd2:NUpassword1!@ds137220.mlab.com:37220/heroku_hpwqqnpt";
 
 app.use(logger("dev"));
 
@@ -18,7 +18,13 @@ app.use(express.json());
 //access all files within the public folder
 app.use(express.static("public"));
 
-mongoose.connect(MONGODB_URI);
+mongoose.Promise = global.Promise;
+
+mongoose.connect(MONGODB_URI, {
+  useMongoClient: true,
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
 
 // routes
 app.use(require("./routes/api.js"));
