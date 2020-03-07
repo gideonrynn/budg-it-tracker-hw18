@@ -7,6 +7,8 @@ const PORT = 3000;
 
 const app = express();
 
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
+
 app.use(logger("dev"));
 
 app.use(compression());
@@ -16,7 +18,7 @@ app.use(express.json());
 //access all files within the public folder
 app.use(express.static("public"));
 
-mongoose.connect("mongodb://localhost/budget", {
+mongoose.connect(MONGODB_URI, "mongodb://localhost/budget", {
   useNewUrlParser: true,
   useFindAndModify: false
 });

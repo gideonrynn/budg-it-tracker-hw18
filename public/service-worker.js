@@ -38,7 +38,7 @@ const filesCacheList = [
     );
   });
   
-  //get/fetch from cache
+  //fetch from cache
   self.addEventListener("fetch", event => {
     if (event.request.url.startsWith("/api/")) {
       event.respondWith(
