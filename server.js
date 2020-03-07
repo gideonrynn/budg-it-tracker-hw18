@@ -18,10 +18,7 @@ app.use(express.json());
 //access all files within the public folder
 app.use(express.static("public"));
 
-mongoose.connect(MONGODB_URI, "mongodb://localhost/budget", {
-  useNewUrlParser: true,
-  useFindAndModify: false
-});
+mongoose.connect(MONGODB_URI);
 
 // routes
 app.use(require("./routes/api.js"));
