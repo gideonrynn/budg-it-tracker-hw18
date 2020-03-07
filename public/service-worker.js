@@ -40,7 +40,7 @@ const filesCacheList = [
   
   //get/fetch from cache
   self.addEventListener("fetch", event => {
-    if (event.request.url.startsWith(self.location.origin)) {
+    if (event.request.url.startsWith("/api/")) {
       event.respondWith(
         caches.match(event.request).then(cachedResponse => {
           if (cachedResponse) {
