@@ -2,11 +2,10 @@
 This is a Git Hub repository for the NU Coding Bootcamp Budget Tracker for Week 18.
 
 
-![budg it screenshot](public/images/comingsoon.jpg)
-![budg it gif](public/images/comingsoon.gif)
+![budg it screenshot](public/images/budgittracker.JPG)
 
 # Deployed Application Link
-n/a
+https://obscure-cove-91531.herokuapp.com/
 
 
 # Setup
@@ -22,7 +21,9 @@ n/a
   npm i
 ```
 
-3. Run in command line with node server.js
+3. If deploying application to Heroku, update MONGODB_URI username and password based on details generated through add-on.
+
+4. Run in command line with node server.js
 
 
 Also see: [Cloning a repository](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
@@ -30,7 +31,7 @@ Also see: [Cloning a repository](https://help.github.com/en/github/creating-clon
 
 # Usage
 
-The Budg-It tracker will allow a user to track budget both online and offline. For example, if a user is without a connection when traveling, deposits and expenses will be saved offline, and the total will be populated when the apps connects at a later time or date to maintain an accurate account of their budget.
+The Budg-It tracker will allow a user to track budget both online and offline. For example, if a user loses internet access when traveling, deposits and expenses will be saved offline, and the total will be populated when the apps connects at a later time or date to maintain an accurate account of their budget.
 
 
 # Technologies
@@ -43,10 +44,7 @@ This project was built using:
   - [Lite-Server ^2.5.3](https://www.npmjs.com/package/lite-server)
   - [Mongoose ^5.5.15](https://www.npmjs.com/package/mongoose)
   - [Morgan ^1.9.1](https://www.npmjs.com/package/morgan)
-  
-
-# Acknowledgements
-n/a
+  - [Heroku](https://www.heroku.com) (deployed)
 
 
 # License
