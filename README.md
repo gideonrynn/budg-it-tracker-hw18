@@ -5,7 +5,7 @@ This is a Git Hub repository for the NU Coding Bootcamp Budget Tracker for Week 
 ![budg it screenshot](public/images/budgittracker.JPG)
 
 # Deployed Application Link
-https://obscure-cove-91531.herokuapp.com/
+https://budg-it-tracker.herokuapp.com/
 
 
 # Setup
